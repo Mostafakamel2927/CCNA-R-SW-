@@ -1,0 +1,53 @@
+Feb 27 22:46:10.680 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Feb 27 22:46:10.681 HYPERVISOR: Started on IP = localhost, TCP port = 65216.
+Feb 27 22:46:11.167 HYPERVISOR: exec_cmd: hypervisor version 
+Feb 27 22:46:11.167 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Blu-Ray\GNS3\projects\vrrp\project-files\dynamips 
+Feb 27 22:46:11.168 GENERAL: working_dir=C:\Users\Blu-Ray\GNS3\projects\vrrp\project-files\dynamips
+Feb 27 22:46:11.168 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Blu-Ray\GNS3\projects\vrrp\project-files\dynamips\99d1e7e3-2534-4d6e-b1ae-2ad45bf1d545 
+Feb 27 22:46:11.171 GENERAL: working_dir=C:\Users\Blu-Ray\GNS3\projects\vrrp\project-files\dynamips\99d1e7e3-2534-4d6e-b1ae-2ad45bf1d545
+Feb 27 22:46:11.171 HYPERVISOR: exec_cmd: vm create R4 4 c7200 
+Feb 27 22:46:11.174 VM: VM R4 created.
+Feb 27 22:46:11.174 HYPERVISOR: exec_cmd: vm set_con_tcp_port R4 5003 
+Feb 27 22:46:11.175 HYPERVISOR: exec_cmd: c7200 get_mac_addr R4 
+Feb 27 22:46:11.175 HYPERVISOR: exec_cmd: vm get_status R4 
+Feb 27 22:46:11.175 HYPERVISOR: exec_cmd: vm slot_add_binding R4 0 0 C7200-IO-FE 
+Feb 27 22:46:11.177 HYPERVISOR: exec_cmd: vm set_ios R4 C:/Users/Blu-Ray/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Feb 27 22:46:11.177 HYPERVISOR: exec_cmd: vm get_status R4 
+Feb 27 22:46:11.178 HYPERVISOR: exec_cmd: vm set_idle_pc R4 0x60186e04 
+Feb 27 22:46:11.178 HYPERVISOR: exec_cmd: vm set_exec_area R4 64 
+Feb 27 22:46:11.179 HYPERVISOR: exec_cmd: vm set_ram R4 512 
+Feb 27 22:46:11.179 HYPERVISOR: exec_cmd: vm set_nvram R4 512 
+Feb 27 22:46:11.180 HYPERVISOR: exec_cmd: vm set_disk0 R4 0 
+Feb 27 22:46:11.180 HYPERVISOR: exec_cmd: vm get_status R4 
+Feb 27 22:46:11.181 HYPERVISOR: exec_cmd: vm slot_add_binding R4 1 0 PA-2FE-TX 
+Feb 27 22:46:11.260 HYPERVISOR: exec_cmd: vm set_ios R4 C:/Users/Blu-Ray/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Feb 27 22:46:27.292 HYPERVISOR: exec_cmd: vm set_ios R4 C:/Users/Blu-Ray/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Feb 27 22:46:58.993 HYPERVISOR: exec_cmd: vm set_ios R4 C:/Users/Blu-Ray/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Feb 27 22:46:58.993 HYPERVISOR: exec_cmd: vm rename R4 user1 
+Feb 27 22:46:59.067 HYPERVISOR: exec_cmd: vm set_ios user1 C:/Users/Blu-Ray/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Feb 27 22:47:31.399 HYPERVISOR: exec_cmd: nio create_udp udp-0e4a3e6a-3343-4278-831d-5e0d967c2033 10007 127.0.0.1 10008 
+Feb 27 22:47:31.632 HYPERVISOR: exec_cmd: vm slot_add_nio_binding user1 0 0 udp-0e4a3e6a-3343-4278-831d-5e0d967c2033 
+Feb 27 22:47:31.633 HYPERVISOR: exec_cmd: vm get_status user1 
+Feb 27 22:47:37.707 HYPERVISOR: exec_cmd: vm set_ios user1 C:/Users/Blu-Ray/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Feb 27 22:48:21.276 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Feb 27 22:48:21.278 VM: VM Ghost created.
+Feb 27 22:48:21.325 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Blu-Ray/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Feb 27 22:48:21.326 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Feb 27 22:48:21.326 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost 'C:\Users\Blu-Ray\GNS3\projects\vrrp\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-512.ghost' 
+Feb 27 22:48:21.327 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+Feb 27 22:48:21.327 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Feb 27 22:48:21.328 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Feb 27 22:48:21.328 HYPERVISOR: exec_cmd: vm start Ghost 
+Feb 27 22:48:21.385 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Feb 27 22:48:21.548 VM: VM Ghost shutdown.
+Feb 27 22:48:21.548 VM: VM Ghost destroyed.
+Feb 27 22:48:21.560 HYPERVISOR: exec_cmd: vm get_status user1 
+Feb 27 22:48:21.563 HYPERVISOR: exec_cmd: vm set_config user1 configs\i4_startup-config.cfg 
+Feb 27 22:48:21.563 HYPERVISOR: exec_cmd: vm start user1 
+Feb 27 22:48:52.055 HYPERVISOR: exec_cmd: vm extract_config user1 
+Feb 27 23:04:32.037 HYPERVISOR: exec_cmd: vm set_ios user1 C:/Users/Blu-Ray/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Feb 27 23:15:22.160 HYPERVISOR: exec_cmd: vm extract_config user1 
+Feb 27 23:15:44.325 HYPERVISOR: exec_cmd: vm get_status user1 
+Feb 27 23:15:44.326 HYPERVISOR: exec_cmd: vm stop user1 
+Feb 27 23:15:44.449 VM: VM user1 shutdown.
+Feb 27 23:15:44.450 HYPERVISOR: exec_cmd: vm extract_config user1 
